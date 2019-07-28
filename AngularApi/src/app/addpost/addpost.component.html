@@ -1,0 +1,28 @@
+<p>
+addpost works!
+</p>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div>
+      <div>
+          <label>Id</label>
+          <input type="number" formControlName="id">
+        </div><br>
+    <label>UserId</label>
+    <input type="number" formControlName="userId">
+  </div><br>
+  
+ 
+  <div>
+    <label>Title</label>
+    <input type="text" formControlName="title">
+  </div><br>
+  <div>
+    <label>Body</label>
+    <input type="text" formControlName="body">
+  </div><br>
+ 
+<div>  <button class="button" type="submit">AddPost</button><br></div>
+ 
+  
+</form>
+<div> <button (click)="goBack()">go back</button></div>

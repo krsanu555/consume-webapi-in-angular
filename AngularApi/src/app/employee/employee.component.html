@@ -1,0 +1,15 @@
+<p>
+employee works!
+</p>
+<nav>
+  <a routerLink="/addpost">Add Posts</a>
+  
+</nav>
+<ul>
+  <li *ngFor="let post of posts">
+    <a routerLink="/detail/{{post.id}}">
+   <span class="badge">{{post.id}}</span> 
+   </a>
+   <button (click)="delete(post)">x</button>
+  </li>
+</ul>
